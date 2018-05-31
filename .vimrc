@@ -19,11 +19,8 @@
 	set guioptions-=L  "remove left-hand scroll bar
 	set hlsearch
 	set incsearch
-
-" Indenting:
 	set nowrap
-	set smarttab
-	set smartindent
+	colorscheme vividchalk
 
 " File Browsing:
 	let g:netrw_banner=0        " disable annoying banner
@@ -34,43 +31,10 @@
 	let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 	let g:netrw_winsize=75
 
-" TAG JUMPING:
-
-	" Create the `tags` file (may need to install ctags first)
-	command! MakeTags !ctags -R .
-
-	" NOW WE CAN:
-	" ^ == CTRL ie below is CTRL-]
-	" - Use ^] to jump to tag under cursor
-	" - Use g^] for ambiguous tags
-	" - Use ^t to jump back up the tag stack
-
-	" THINGS TO CONSIDER:
-	" - This doesn't help if you want a visual list of tags
-
-" AUTOCOMPLETE:
-
-	" The good stuff is documented in |ins-completion|
-
-	" HIGHLIGHTS:
-	" - ^x^n for JUST this file
-	" - ^x^f for filenames (works with our path trick!)
-	" - ^x^] for tags only
-	" - ^n for anything specified by the 'complete' option
-
-	" NOW WE CAN:
-	" - Use ^n and ^p to go back and forth in the suggestion list
-
 " SNIPPETS:
 
 	" Read an empty HTML template and move cursor to title
 	nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
-
-	" NOW WE CAN:
-	" - Take over the world!
-	"   (with much fewer keystrokes)
-
-	colorscheme vividchalk
 
 " Airline:
 	set laststatus=2
