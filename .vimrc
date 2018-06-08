@@ -21,6 +21,7 @@
 	set incsearch
 	set nowrap
 	colorscheme vividchalk
+	set path+=**
 
 " File Browsing:
 	let g:netrw_banner=0        " disable annoying banner
