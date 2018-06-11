@@ -23,6 +23,10 @@
 	colorscheme vividchalk
 	set path+=**
 
+" Macros:
+	let @p = 'iprint_r(lea, true)'
+	let @e = 'oerror_log('');hi'
+
 " File Browsing:
 	let g:netrw_banner=0        " disable annoying banner
 	let g:netrw_browse_split=4  " open in prior window
