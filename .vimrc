@@ -41,10 +41,11 @@
 	" Read an empty HTML template and move cursor to title
 	nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
 
-" Airline:
+" Status Line:
 	set laststatus=2
-	set ttimeoutlen=50
-	let g:airline#extensions#tabline#enabled = 1
+	let g:ctags_statusline=1
+	let g:ctags_regenerate=0
+	let g:ctags_args='--languages=PHP'
 
 " Commands:
 	command Cdc cd %:p:h
