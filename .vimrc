@@ -24,7 +24,7 @@
 	set path+=**
 
 " Macros:
-	let @p = 'iprint_r(lea, true)'
+	let @p = 'T iprint_r(%i, true)'
 	let @e = 'oerror_log('');hi'
 
 " File Browsing:
@@ -53,6 +53,14 @@
 
 " Mappings:
 	nnoremap <C-h> <C-w>h
+	execute "set <M-h>=\eh"
+	nnoremap <M-h> <C-w>h<C-w><Bar>^
 	nnoremap <C-j> <C-w>j
+	execute "set <M-j>=\ej"
+	nnoremap <M-j> <C-w>j<C-w>=
 	nnoremap <C-k> <C-w>k
+	execute "set <M-k>=\ek"
+	nnoremap <M-k> <C-w>k<C-w>=
 	nnoremap <C-l> <C-w>l
+	execute "set <M-l>=\el"
+	nnoremap <M-l> <C-w>l<C-w><Bar>^
