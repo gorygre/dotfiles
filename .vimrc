@@ -52,6 +52,12 @@
 	command Cdc cd %:p:h
 	command Cldc lcd %:p:h
 
+" Functions:
+function VSplitFileUnderCursor()
+	let s:wordUnderCursor = expand("<cfile>")
+	execute "vsplit " . s:wordUnderCursor
+endfunction
+
 " Mappings:
 	nnoremap <C-h> <C-w>h
 	execute "set <M-h>=\eh"
@@ -65,3 +71,6 @@
 	nnoremap <C-l> <C-w>l
 	execute "set <M-l>=\el"
 	nnoremap <M-l> <C-w>l<C-w><Bar>^
+	inoremap jk <esc>
+	inoremap <esc> <nop>
+	nnoremap <leader>v :call VSplitFileUnderCursor()<CR>
