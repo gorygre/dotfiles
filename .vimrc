@@ -77,3 +77,5 @@ endfunction
 	inoremap jk <esc>
 	inoremap <esc> <nop>
 	nnoremap <leader>v :call VSplitFileUnderCursor()<CR>
+	nnoremap <leader>g zo<C-o>
+	nnoremap <leader>f v?function<CR>jzf
