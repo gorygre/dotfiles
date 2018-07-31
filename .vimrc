@@ -24,6 +24,9 @@
 	set path+=**
 	set timeoutlen=1000 ttimeoutlen=0
 
+" Ack:
+	let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " Macros:
 	let @p = 'T iprint_r(%i, true)'
 	let @e = 'oerror_log('');hi'
