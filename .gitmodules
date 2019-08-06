@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/ack.vim"]
 	path = .vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/svnj.vim"]
+	path = .vim/bundle/svnj.vim
+	url = https://github.com/juneedahamed/svnj.vim
