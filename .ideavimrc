@@ -1,0 +1,62 @@
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
+set hls
+set showmode
+set showcmd
+
+" Mappings:
+	let mapleader = " "
+	nnoremap <C-h> <C-w>h
+	"execute "set <M-h>=\eh"
+	nnoremap <M-h> <C-w>h<C-w><Bar>^
+	nnoremap <C-j> <C-w>j
+	"execute "set <M-j>=\ej"
+	nnoremap <M-j> <C-w>j<C-w>=
+	nnoremap <C-k> <C-w>k
+	"execute "set <M-k>=\ek"
+	nnoremap <M-k> <C-w>k<C-w>=
+	nnoremap <C-l> <C-w>l
+	"execute "set <M-l>=\el"
+	nnoremap <M-l> <C-w>l<C-w><Bar>^
+	inoremap jk <esc>
+	inoremap <esc> <nop>
+	"ideavim does not seam to support <cfile>
+	"nnoremap <leader>v :call <cfile><CR>
+	"nnoremap <leader>e :edit <cfile><CR>
+	nnoremap <leader>nf :action NewFile<CR>
+	nnoremap <leader>ns :action NewScratchFile<CR>
+	nnoremap <leader>nclass :action CIDR.Lang.Cpp.NewClass<CR>
+	nnoremap <leader>nhpp :action CPP.NewHeaderFile<CR>
+	nnoremap <leader>ncpp :action CPP.NewCppFile<CR>
+	nnoremap <leader>R :action ChooseRunConfiguration<CR>
+	nnoremap <leader>r :action Run<CR>
+	nnoremap <leader><C-r> :action RerunFailedTests<CR>
+	nnoremap <leader>d :action Debug<CR>
+	nnoremap <leader>stop :action Stop<CR>
+	nnoremap <leader>/ :action SearchEverywhere<CR>
+	nnoremap <leader>o :action GotoFile<CR>
+	nnoremap <leader>f :action FindInPath<CR>
+	nnoremap <leader>h :action CIDR.Lang.SwitchHeaderSource<CR>
+	nnoremap <leader>so :action StepOver<CR>
+	nnoremap <leader>si :action StepInto<CR>
+	nnoremap <leader>sf :action StepOut<CR>
+	nnoremap <leader>b :action ToggleLineBreakpoint<CR>
+	nnoremap <leader>B :action ViewBreakpoints<CR>
+	nnoremap <leader>jk :action HideActiveWindow<CR>
+	nnoremap <leader>w` :action ActivateProjectToolWindow<CR>
+	nnoremap <leader>w1 :action ActivateTerminalToolWindow<CR>
+	nnoremap <leader>w4 :action ActivateRunToolWindow<CR>
+	nnoremap <leader>w5 :action ActivateDebugToolWindow<CR>
+	nnoremap <leader>w0 :action ActivateCommitToolWindow<CR>
+    nnoremap <leader>1 :buffer 1<CR>
+    nnoremap <leader>2 :buffer 2<CR>
+    nnoremap <leader>3 :buffer 3<CR>
+    nnoremap <leader>4 :buffer 4<CR>
+    nnoremap <leader>5 :buffer 5<CR>
+    nnoremap <leader>6 :buffer 6<CR>
+    nnoremap <leader>7 :buffer 7<CR>
+    nnoremap <leader>8 :buffer 8<CR>
+    nnoremap <leader>9 :buffer 9<CR>
+    nnoremap <leader>0 :buffer 0<CR>
+    nnoremap <leader># :buffer #<CR>
